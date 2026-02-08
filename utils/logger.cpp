@@ -29,10 +29,7 @@ LogOptions LogOptions::FromJson(const std::string& json_path) {
     if (j.contains("also_to_stderr")) opts.also_to_stderr = j["also_to_stderr"].get<bool>();
     if (j.contains("stderr_threshold")) opts.stderr_threshold = j["stderr_threshold"].get<int>();
     if (j.contains("vlog")) opts.vlog = j["vlog"].get<int>();
-    if (j.contains("log_prefix")) opts.log_prefix = j["log_prefix"].get<bool>();
-    if (j.contains("color")) opts.color = j["color"].get<bool>();
     if (j.contains("fatal_terminates")) opts.fatal_terminates = j["fatal_terminates"].get<bool>();
-    if (j.contains("use_custom_sink")) opts.use_custom_sink = j["use_custom_sink"].get<bool>();
   } catch (const std::exception& e) {
     std::cerr << "Failed to parse logger config: " << e.what() << std::endl;
   }

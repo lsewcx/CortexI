@@ -6,17 +6,13 @@ namespace cortexi {
 
 using json = nlohmann::json;
 
-// 通用日志选项
 struct LogOptions {
   std::string app_name = "CortexI";
   std::string log_dir = "";
   bool also_to_stderr = true;
-  int stderr_threshold = 1; // 0: INFO, 1: WARNING, 2: ERROR, 3: FATAL
+  int stderr_threshold = 1;
   int vlog = 0;
-  bool log_prefix = true;       // 是否添加时间戳和线程ID
-  bool color = true;
-  bool fatal_terminates = true; // 是否在Fatal时终止程序
-  bool use_custom_sink = false;
+  bool fatal_terminates = true;
 
   static LogOptions FromJson(const std::string& json_path);
 };
