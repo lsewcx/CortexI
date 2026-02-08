@@ -1,0 +1,15 @@
+[requires]
+onnxruntime/1.23.2
+glog/0.7.1
+gtest/1.17.0
+nlohmann_json/3.11.3
+
+[tool_requires]
+cmake/3.27.9
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout

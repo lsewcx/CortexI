@@ -1,0 +1,11 @@
+{
+  "app_name": "CortexI",
+  "log_dir": "",
+  "also_to_stderr": true,
+  "stderr_threshold": 0,
+  "vlog": 0,
+  "log_prefix": false,
+  "color": true,
+  "fatal_terminates": false,
+  "use_custom_sink": false
+}
